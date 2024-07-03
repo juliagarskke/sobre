@@ -1,0 +1,148 @@
+
+.hero{
+    background-color: #1d0c27;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 160px 80px 40px 80px;
+}
+
+.main {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    user-select: text;
+}
+
+.container-text {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1080px;
+    min-width: 350px;
+    height: 100%;
+    margin: 0 50px 0 20px;
+}
+.email-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    border: 1px solid #969696;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+}
+.img-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    height: inherit;
+    padding: 5px 10px 5px 10px;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+}
+.img-email i {
+    font-size: 35px;
+    color: var(--cor00);
+}
+.email a {
+    font-weight: bold;
+    color: #ff0077;
+    text-decoration: none;
+    background-color: none;
+}
+
+.email h2 {
+    color: #ebebeb;
+}
+
+.textos h1 {
+    font-size: 60px;
+    color: #ebebeb;
+}
+.textos p {
+    font-size: 25px;
+    margin-top: 15px;
+    color: #7e7d7d;
+}
+
+/* Estilos do Formulário */
+
+.div-formulario {
+    background-color: #39184d;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(116, 69, 117);
+    padding: 20px;
+    max-width: 800px;
+    min-width: 350px;
+    width: 33vw;
+    margin-right: 25px;
+}
+.div-formulario h2 {
+    color: #ebebeb;
+    margin-bottom: 20px;
+}
+.div-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ebebeb;
+    font-weight: bold;
+}
+.div-formulario input[type="text"], input[type="email"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.div-formulario button[type="submit"] {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor00);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.div-formulario textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.name-container {
+    display: flex;
+}
+.name-container div {
+    flex: auto;
+}
+#first-name {
+    margin-right: 15px;
+}
+
+/* Deixando o código respinsivo */
+@media  screen and (max-width: 952px) {
+    .hero{
+        padding: 0 40px;
+    }
+    .hero h1{
+        padding: 60px 0 0 0;
+    }
+}

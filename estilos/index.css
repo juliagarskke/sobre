@@ -1,0 +1,139 @@
+/* Estilo da secção principal */
+.hero{
+    background-color: #1d0c27;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+}
+.hero-content{
+    width: 750px;
+}
+.hero-content h1{
+    color: #ebebeb;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-top: 80px;
+}
+.hero-content h2{
+    color: #ff0077;
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero-content p{
+    font-size: 20px;
+    color: #ebebeb;
+    line-height: 26px;
+    margin: 20px 0 40px;
+}
+  
+/* Estilo dos botões */
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 50px;
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    background: #ff0077;
+    border: 2px solid #ff0077;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #ebebeb;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.btn-box a:hover{
+    color: #fff;
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #ff0077;
+}
+.btn-box a:nth-child(2):hover{
+    color: #ebebeb;
+}
+.btn-box a:nth-child(2)::before{
+    background: #ff0077;
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+/* Estilo das redes sociais */
+.social-icon{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon i {
+  font-size: 30px;
+}
+.social-icon a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff0077;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid #ff0077;
+    text-decoration: none;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.social-icon a:hover{
+    color: #ebebeb;
+}
+.social-icon a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff0077;
+    z-index: -1;
+    transition: 0.5s;
+}
+.social-icon a:hover:before{
+width:100%;
+}
+/* Deixando o código responsivo */
+@media  screen and (max-width: 952px) {
+.hero{
+    padding: 0 40px;
+}
+.hero h1{
+    padding: 60px 0 0 0;
+}
+}
